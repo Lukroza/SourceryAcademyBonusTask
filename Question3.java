@@ -5,6 +5,11 @@ class Main {
 
     }
 
+    /// <summary>
+    /// Prints all the reversable dates between the given years
+    /// </summary>
+    /// <param name="fromYear">Start year</param>
+    /// <param name="toYear">End year</param>
     public static void printBonusDatesBetween(int fromYear, int toYear) {
         // for loop which counts years
         for (int i = fromYear; i <= toYear; i++) {
@@ -21,6 +26,13 @@ class Main {
         }
     }
 
+    /// <summary>
+    /// Checks if the date is a palindrome
+    /// </summary>
+    /// <param name="year">Year</param>
+    /// <param name="month">Month</param>
+    /// <param name="day">Day</param>
+    /// <returns>True if the date is a palindrome, false otherwise</returns>
     public static Boolean isValidDate(int year, int month, int day) {
         try {
             String resultDay = String.format("%02d", day);
